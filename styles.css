@@ -96,7 +96,7 @@ header>div{
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-
+    
 }
 
 #project-right-side{
@@ -107,10 +107,21 @@ header>div{
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-rows: 5rem;
     gap: 20px;
     justify-content: center;
 
 }   
+
+#project-header{
+    background-color: white;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.card{
+background-color: blanchedalmond;
+
+}
 
 
 .dashboard-logo{
