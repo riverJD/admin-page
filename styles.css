@@ -1,0 +1,120 @@
+
+*{
+    outline: 1px red dotted;
+}
+
+body{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-container{
+
+    height: 100vh;
+
+    outline: 1px red dotted;
+    display: grid;
+    grid-template: min(150px, 40%) 3fr / 1fr 5fr;
+}
+
+
+header{
+    color:rgb(192, 229, 200);
+  
+  
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgba(22, 85, 43, 0.801);
+  
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+
+    grid-template-areas: 
+    "search header-top-right"
+    "welcome buttons"
+    ;
+
+    border: 1px blue solid;
+
+}
+
+header>div{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.search{
+    grid-area: search;
+    justify-content: center;
+    
+
+}
+
+.header-top-right{
+    grid-area: header-top-right;
+
+}
+
+.header-bottom-left{
+    grid-area: welcome;
+
+}
+
+.header-buttons{
+    grid-area: buttons;
+
+    justify-content: space-around;
+}
+
+
+
+.dashboard{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(141, 130, 86);
+
+    color:white;
+    font-size: min(24px, 2rem);
+
+    grid-template-rows: minmax(auto, 150px);
+    grid-auto-rows: minmax(50px, 1fr);
+
+    display: grid;
+}
+
+.dashboard>div{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.main{
+    grid-area: 2 / 2 / -1 / -1;
+    background-color: rgb(169, 187, 187);
+
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+#project-right-side{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 20px;
+    justify-content: center;
+
+}   
+
+
+.dashboard-logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
