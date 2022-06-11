@@ -61,6 +61,9 @@ header>div{
     display: flex;
     gap: 2rem;
 }
+header h1{
+    margin: 0;
+}
 
 
 
@@ -125,9 +128,10 @@ header button:active{
     grid-area: welcome;
     align-items: center;
     margin-left: 10%;
-
+    margin-top: 5%;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 50px 30px / 1fr 1fr;
+
 
 }
 
