@@ -25,7 +25,7 @@ a, a:visited, a:active{
 
    
     display: grid;
-    grid-template: 170px 1fr / minmax(4rem, 250px) 5fr;
+    grid-template: 200px 1fr / minmax(4rem, 250px) 5fr;
 }
 
 
@@ -36,11 +36,11 @@ header{
     box-shadow: 3px 3px 5px rgb(146, 145, 145); 
     
     margin-bottom: 5px;
-
+    align-items: flex-start;
     grid-area: 1 / 2 / 2 / 3;
     
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 70px 100px / 1fr 1fr;
     grid-template-areas: 
     "search header-top-right"
     "welcome buttons"
@@ -63,8 +63,8 @@ header>div{
     background-color: rgb(84, 174, 235);
     border:rgb(84, 174, 235);
     border-radius: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
+
+
     
 }
 
@@ -79,8 +79,20 @@ header button:active{
 
 .search{
     grid-area: search;
-    justify-content: center;
 
+    display: flex;
+    align-items: center;
+    margin: 10px 30% 0 10%
+
+}
+
+#search-bar{
+    background-color: rgb(216, 216, 216);
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 8px;
+    
+
+    flex: 1;
 }
 
 
@@ -90,8 +102,7 @@ header button:active{
     color: rgb(51, 111, 151);
     grid-area: header-top-right;
     margin-top: 5px;
-    margin-right: 10px;
-    outline: 1px red dotted;
+    margin-right: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -102,7 +113,11 @@ header button:active{
 
 .header-bottom-left{
     grid-area: welcome;
-    outline: 1px green dotted;
+    align-items: center;
+    margin-left: 10%;
+
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
 
 }
 
@@ -115,12 +130,25 @@ header button:active{
 #river-logo-big{
     height: auto;
     width: 5rem;
+    grid-area: 1 / 1 / 3 / 2;
 }
 
-.header-buttons{
-    grid-area: buttons;
+#welcome-message{
+    grid-area: 1 / 2 / 2 / 3;
+}
 
-    justify-content: space-around;
+#name-message{
+    grid-area: 2 / 3 / 2 / 3;
+}
+
+
+.header-buttons{
+    height: 100%;
+    grid-area: buttons;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .dashboard{
@@ -176,7 +204,7 @@ header button:active{
     grid-area: 2 / 2 / -1 / -1;
     background-color: rgb(216, 216, 216);
     gap: 10px;
-    padding: 10px;
+   
 
     display: grid;
     grid-template-columns: 3fr 1fr;
