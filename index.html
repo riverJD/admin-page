@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="admin.js"></script>
-    <title>Document</title>
+    <title>Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Barlow:wght@300&family=Open+Sans:wght@300&family=Titillium+Web&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -18,9 +24,8 @@
         </div>
 
         <div class="header-top-right">
-            <div class="bell icon">B</div>
-            <div class="logo">L</div>
-            <div class="name">My Name</div>
+            <div class="logo"><img src="./img/riv.png" alt="river logo" id="river-logo"></div>
+            <div class="name"><p>River</p></div>
         </div>
         <div class="header-bottom-left">
             <div class="logo">L</div>
@@ -35,13 +40,13 @@
     </header>
 
     <div class="dashboard">
-        <div class="dashboard-logo">L<div class="dashboard-title image-div"></div>  DASHBOARD</div>
-        <div class="icon dashboard-icon" id="home">H <div class="dashboard-title">Home</div></div>
-        <div class="icon dashboard-icon" id="profile">P <div class="dashboard-title">Profile</div>  </div>
-        <div class="icon dashboard-icon" id="messages">M <div class="dashboard-title">Messages</div></div>
-        <div class="icon dashboard-icon" id="history">H <div class="dashboard-title">History</div></div>
-        <div class="icon dashboard-icon" id="tasks">T <div class="dashboard-title">Tasks</div></div>
-        <div class="icon dashboard-icon" id="communities">C <div class="dashboard-title">Communities</div>  </div>
+        <div class="dashboard-logo"><div class="dashboard-title image-div"><img src="./img/shield-crown.png" alt=""></div><h2>Dashboard</h2></div>
+        <div class="icon dashboard-icon" id="home"><input type="image" src="./img/home.png" alt="Home"><div class="dashboard-title"><h3>Home</h3></div></div>
+        <div class="icon dashboard-icon" id="profile"><input type="image" src="./img/badge-account-horizontal.png" alt="Profile"><div class="dashboard-title"><h3>Profile</h3></div>  </div>
+        <div class="icon dashboard-icon" id="messages"><input type="image" src="./img/message-settings.png" alt="Messages" class="dashboard-button"><div class="dashboard-title"><h3>Messages</h3></div></div>
+        <div class="icon dashboard-icon" id="history"><input type="image" src="./img/clipboard-text-clock-outline.png" alt="History" class="dashboard-button"><div class="dashboard-title"><h3>History</h3></div></div>
+        <div class="icon dashboard-icon" id="settings"><input type="image" src="./img/cog.png" alt="settings" class="dashboard-button"><div class="dashboard-title"><h3>Settings</h3></div></div>
+        <div class="icon dashboard-icon" id="communities"><input type="image" src="./img/account-group.png" alt="Communities" class="dashboard-button"><div class="dashboard-title"><h3>Communities</h3></div>  </div>
 
     </div>
 
@@ -49,16 +54,36 @@
         <div class="project-cards cards">
         <div class="sub-title" id="project-header"><h3>Your Projects</h3></div>
    
-        <div class="card" id="card-1">Card</div>
-        <div class="card" id="card-2">Card</div>
+        <div class="card" id="card-1">
+            <h4>Super Cool Project</h4>
+            <div class="card-content" id="cool-project"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna condimentum mattis pellentesque id nibh tortor. Facilisis mauris sit amet massa vitae tortor.</p></div>
+            <div class="card-buttons">
+                <input type="image" src="img/comment-text-multiple-outline.png" alt="Comment">
+
+                <input type="image" src="img/arrow-right-bold.png" alt="Go to Project">
+            </div>
+
+        </div>
+        <div class="card" id="card-2">
+            <h4>Less Cool Project</h4>
+            <div class="card-content" id="cool-project"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna condimentum mattis pellentesque id nibh tortor. Facilisis mauris sit amet massa vitae tortor.</p></div>
+            <div class="card-buttons">
+                <input type="image" src="img/comment-text-multiple-outline.png" alt="Comment">
+
+                <input type="image" src="img/arrow-right-bold.png" alt="Go to Project">
+            </div>
+
+        </div>
         <div class="card" id="card-3">Card</div>
         <div class="card" id="card-4">Card</div>
         <div class="card" id="card-5">Card</div>
         <div class="card" id="card-6">Card</div>
         </div>
         <div class="util-cards cards" id="project-right-side">
-            <div class="card util-card" id="util-card-1"><h3>Announcements</h3></div>
-            <div class="card util-card" id="util-card-2"><h3>Trending</h3></div>
+            <div class="sub-title" id="announcements-header"><h3>Announcements</h3></div>
+            <div class="card util-card" id="announcements-card"></div>
+            <div class="sub-title" id="trending-header"><h3>Trending</h3></div>
+            <div class="card util-card" id="util-card-2"></div>
 
 
         </div>
