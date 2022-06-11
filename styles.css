@@ -257,7 +257,7 @@ border-radius: 5px;
 box-shadow: 3px 3px 5px rgb(175, 174, 174); 
 
 display: grid;
-padding: 1rem;
+padding: 5px 10px 5px;
 
 grid-template-rows: min-content 1fr min-content;
 
@@ -287,9 +287,10 @@ grid-template-rows: min-content 1fr min-content;
 }
 .card-image{
     height: auto;
-    width: 50%;
+    width: 100px;
     justify-self: center;
-    border: 2px var(--dashboard-bg-color) dash
+    border: 2px var(--dashboard-bg-color) dashed;
+    
 }
 
 
