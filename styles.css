@@ -3,11 +3,12 @@
     --main-bg-color: rgb(216, 216, 216);
     --header-bg-color: rgb(238, 235, 230);
     --dashboard-bg-color: rgb(51, 111, 151);
-    --card-border-color: rgb(84, 174, 235);
+    --card-border-color: #68a4c6;
     --card-bg-color: rgb(238, 235, 230);
+    --button-bg-color: #68a4c6;
+    --alt-card-bg-color: #647431;
+
 }
-
-
 *{
     font-family:"Titillium Web", sans-serif;
 }
@@ -69,7 +70,7 @@ header>div{
     font-size: 1.1rem;
     color: rgb(238, 235, 230);
     font-weight: bold;
-    background-color: var(--card-border-color);
+    background-color: var(--button-bg-color);
     border:var(--card-border-color);
     border-radius: 30px;
 
@@ -167,11 +168,11 @@ header button:active{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+ 
 }
 
 
 .dashboard-content{
-    
     
     
     color:rgb(252, 249, 245);
@@ -180,7 +181,7 @@ header button:active{
     grid-template-rows: 150px;
     grid-auto-rows: 4rem;
     
-
+    overflow: hidden;
     display: grid;
 }
 
@@ -206,6 +207,11 @@ header button:active{
     align-items: center;
 }
 
+.dashboard-title{
+    padding: 8px;
+}
+
+
 .footer{}
 
 
@@ -213,8 +219,8 @@ header button:active{
     grid-area: 2 / 2 / -1 / -1;
     background-color: var(--main-bg-color);
     gap: 10px;
-   
-
+    margin: 10px;
+  
     display: grid;
     grid-template-columns: 3fr 1fr;
 
@@ -276,6 +282,11 @@ grid-template-rows: min-content 1fr min-content;
 
 #announcments-card{
     background-color: var(--card-bg-color);
+}
+
+.util-card{
+    border-left: .5rem solid var(--dashboard-bg-color);
+
 }
 
 
