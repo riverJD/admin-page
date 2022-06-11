@@ -223,6 +223,7 @@ header button:active{
   
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-auto-rows: max(300px);
 
 }
 
@@ -279,6 +280,18 @@ grid-template-rows: min-content 1fr min-content;
     justify-self: flex-end;
 
 }
+
+.card-content{
+    
+   
+}
+.card-image{
+    height: auto;
+    width: 50%;
+    justify-self: center;
+    border: 2px var(--dashboard-bg-color) dash
+}
+
 
 #announcments-card{
     background-color: var(--card-bg-color);
