@@ -1,13 +1,26 @@
 # admin-page
-<a href="https://www.flaticon.com/free-icons/river" title="river icons">River icons created by Freepik - Flaticon</a>
+
+## Admin page for The Odin Project
+
+I used the basic outline for the assignment but added some of my own styling. Fairly straight forward implementations of CSS Grid and Flexbox. 
 
 
-dog pfp - No-longer-here
-https://pixabay.com/users/no-longer-here-19203/
 
 
-robot pfp Hundefan
-https://pixabay.com/users/hundefan-849473/
+'Trending' PFPs sourced from:
 
-guy pfp OpenClipart-Vectors
-https://pixabay.com/users/openclipart-vectors-30363/
+
+dog pfp  
+    No-longer-here
+    https://pixabay.com/users/no-longer-here-19203/
+
+
+robot pfp 
+    Hundefan
+    https://pixabay.com/users/hundefan-849473/
+
+
+guy pfp 
+crow pfp
+    OpenClipart-Vectors
+    https://pixabay.com/users/openclipart-vectors-30363/
