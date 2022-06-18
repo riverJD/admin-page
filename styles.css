@@ -299,6 +299,8 @@ grid-template-rows: min-content 1fr min-content;
 
 
 .card-image{
+    margin-top: auto;
+
     height: auto;
     width: 100px;
     justify-self: center;
